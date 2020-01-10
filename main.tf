@@ -25,7 +25,7 @@ resource "kubernetes_deployment" "kw_debug" {
           name = var.image_pull_secrets_name
         }
         container {
-          image = "registry.skypicker.com:5005/platform/kw-debug:${var.container_version}"
+          image = "eu.gcr.io/kw-registry/platform/kw-debug:${var.container_version}"
           name  = var.name
 
           resources {
