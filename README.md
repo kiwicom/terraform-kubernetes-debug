@@ -7,6 +7,6 @@ A terraform module for deploying [kw-debug-container](https://gitlab.skypicker.c
 ```hcl
 module "debug" {
   source  = "kiwicom/debug/kubernetes"
-  version = "2.0.0"
+  version = "~> 3.0.0"
 }
 ```
