@@ -29,11 +29,11 @@ resource "kubernetes_deployment" "kw_debug" {
           name  = var.name
 
           resources {
-            limits {
+            limits = {
               cpu    = "0"
               memory = "0"
             }
-            requests {
+            requests = {
               cpu    = "0"
               memory = "0"
             }
